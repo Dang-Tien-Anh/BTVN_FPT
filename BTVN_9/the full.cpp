@@ -10,7 +10,7 @@ int sumOfDigits(int n) {
     return sum;
 }
 
-// Tim uoc chung lon nhat
+
 int gcd(int a, int b) {
     while (b) {
         int r = a % b;
@@ -20,12 +20,12 @@ int gcd(int a, int b) {
     return a;
 }
 
-// Tim boi chung nho nhat
+
 int lcm(int a, int b) {
     return a * b / gcd(a, b);
 }
 
-// Tinh x^y bang vong lap
+
 int power(int x, int y) {
     int result = 1;
     for (int i = 0; i < y; ++i) {
@@ -34,7 +34,7 @@ int power(int x, int y) {
     return result;
 }
 
-// Dao nguoc so nguyen
+
 int reverseInteger(int n) {
     int reversed = 0;
     int sign = n < 0 ? -1 : 1;
@@ -46,7 +46,7 @@ int reverseInteger(int n) {
     return reversed * sign;
 }
 
-// Tim phan tu lon nhat trong mang
+
 int maxInArray(int arr[], int size) {
     int max = arr[0];
     for (int i = 1; i < size; ++i)
@@ -54,7 +54,7 @@ int maxInArray(int arr[], int size) {
     return max;
 }
 
-// Tim phan tu nho nhat trong mang
+
 int minInArray(int arr[], int size) {
     int min = arr[0];
     for (int i = 1; i < size; ++i)
@@ -62,7 +62,7 @@ int minInArray(int arr[], int size) {
     return min;
 }
 
-// Sap xep mang tang dan (Bubble Sort)
+
 void sortArray(int arr[], int size) {
     for (int i = 0; i < size - 1; ++i)
         for (int j = 0; j < size - i - 1; ++j)
@@ -73,7 +73,7 @@ void sortArray(int arr[], int size) {
             }
 }
 
-// Dao nguoc mang
+
 void reverseArray(int arr[], int size) {
     for (int i = 0; i < size / 2; ++i) {
         int temp = arr[i];
@@ -82,14 +82,14 @@ void reverseArray(int arr[], int size) {
     }
 }
 
-// In mang
+
 void printArray(int arr[], int size) {
     for (int i = 0; i < size; ++i)
         printf("%d ", arr[i]);
     printf("\n");
 }
 
-// Chuong trinh chinh
+
 int main() {
     int n = -12345;
     int a = 12, b = 18;
@@ -112,6 +112,5 @@ int main() {
     reverseArray(arr, size);
     printf("Mang sau khi dao nguoc: ");
     printArray(arr, size);
-
-    return 0;
 }
+
